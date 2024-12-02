@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <div class="navbar"> 
+        <div class="logo">TApp Store</div>
+         <div>
+            <a href="index.html">Home</a>
+            <a href="#about">About Me</a> 
+            <a href="#Resume">My Resume</a>
+            <a href="contactus.html">Contact Me</a> 
+            
+        </div>
+    </div>
+    <div class="contact-info">
+        <h1>Contact Me</h1>
+         <ul class="left-list">
+             <li><a href="https://leetcode.com/u/Suryansh_Srivastava/" target="_blank">LeetCode</a></li> 
+             <li><a href="https://www.hackerrank.com/profile/Stanay924" target="_blank">HackerRank</a></li>
+             <li><a href="https://www.geeksforgeeks.org/user/stanagkqy/" target="_blank">GeeksforGeeks</a></li> 
+        </ul>
+        <ul class="right-list">
+             <li><a href="https://codolio.com/profile/suryansh" target="_blank">Codolio Profile</a></li>
+             <li><a href="https://www.linkedin.com/in/suryansh-srivastava-909036291/" target="_blank">LinkedIn</a></li>
+             <li><a href="https://github.com/Suryanshsrivastv" target="_blank">GitHub</a></li> 
+        </ul>
+    </div>
+    <div class="additional-info"> 
+        <h2>Additional Information</h2>
+         <p><strong>Phone:</strong> +91 6378571487</p> 
+         <p><strong>Email:</strong> Stanay924@gmail.com</p> 
+         <p><strong>Address:</strong>Poornima University, Jaipur(Raj.)</p> 
+        </div>
+    <script> 
+        document.querySelectorAll('.contact-info a').forEach(link => { link.addEventListener('click', function() { alert('You will be redirected to ' + this.textContent); }); }); </script>
+</body>
+</html>

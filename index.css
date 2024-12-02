@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar .logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.offerings {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.offerings h1 {
+    margin: 0;
+    color: #333;
+}
+
+.app-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: left;
+}
+
+.app-container h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.description, .screenshots, .download {
+    margin-top: 20px;
+}
+
+.screenshots h3, .description h3, .download h3 {
+    margin-bottom: 10px;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.scroll-container img {
+    max-width: 150px;
+    max-height: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-box {
+    background-color: #007BFF;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.download-box a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.download-box a:hover {
+    background-color: #0056b3;
+}

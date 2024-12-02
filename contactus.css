@@ -1,0 +1,102 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-info {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    width: 45%;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact-info a:hover {
+    color: #007BFF;
+    transform: scale(1.1);
+}
+
+.additional-info {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.additional-info h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.additional-info p {
+    margin: 10px 0;
+    font-size: 18px;
+}
