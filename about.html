@@ -14,7 +14,7 @@
             <a href="about.html">About Me</a> 
             <a href="resume.html">My Resume</a>
             <a href="contactus.html">Contact Me</a> 
-            
+            <button class="toggle-dark-mode" id="dark-mode-toggle">Dark Mode</button>
         </div>
     </div>
     <div class="about-me">
@@ -33,6 +33,23 @@
         +91 6378571487</p> <p><strong>Email:</strong>  Stanay924@gmail.com </p>
         <p><strong>Address:</strong> Poornima University, Jaipur(Raj.)</p>
      </div> 
-     
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const body = document.body;
+
+            const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+
+            if (isDarkMode) {
+                body.classList.add('dark-mode');
+            }
+
+            darkModeToggle.addEventListener('click', function () {
+                body.classList.toggle('dark-mode');
+                const darkModeEnabled = body.classList.contains('dark-mode');
+                localStorage.setItem('darkMode', darkModeEnabled ? 'enabled' : 'disabled');
+            });
+        });
+    </script> 
 </body>
 </html>

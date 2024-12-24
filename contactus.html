@@ -14,7 +14,7 @@
             <a href="about.html">About Me</a> 
             <a href="resume.html">My Resume</a>
             <a href="contactus.html">Contact Me</a> 
-            
+            <button class="toggle-dark-mode" id="dark-mode-toggle">Dark Mode</button>
         </div>
     </div>
     <div class="contact-info">
@@ -38,5 +38,26 @@
         </div>
     <script> 
         document.querySelectorAll('.contact-info a').forEach(link => { link.addEventListener('click', function() { alert('You will be redirected to ' + this.textContent); }); }); </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const darkModeToggle = document.getElementById('dark-mode-toggle');
+                const body = document.body;
+    
+                // Check local storage for saved mode
+                const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+    
+                // Set initial mode
+                if (isDarkMode) {
+                    body.classList.add('dark-mode');
+                }
+    
+                // Toggle dark mode on button click
+                darkModeToggle.addEventListener('click', function () {
+                    body.classList.toggle('dark-mode');
+                    const darkModeEnabled = body.classList.contains('dark-mode');
+                    localStorage.setItem('darkMode', darkModeEnabled ? 'enabled' : 'disabled');
+                });
+            });
+        </script> 
 </body>
 </html>

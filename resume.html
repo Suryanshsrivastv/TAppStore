@@ -9,14 +9,54 @@
 <body>
     <div class="navbar"> 
         <div class="logo">TApp Store</div>
-         <div>
+        <div>
             <a href="index.html">Home</a>
             <a href="about.html">About Me</a> 
             <a href="resume.html">My Resume</a>
             <a href="contactus.html">Contact Me</a> 
-            
+            <button class="toggle-dark-mode" id="dark-mode-toggle">Dark Mode</button>
         </div>
     </div>
     <h1>My Resume</h1>
+    <button id="downloadResumeBtn" style="padding: 12px 25px; font-size: 16px; font-weight: bold; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: background-color 0.3s, transform 0.2s; display: block; margin: 0 auto;">
+        Download My Resume
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const body = document.body;
+            const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+
+            if (isDarkMode) {
+                body.classList.add('dark-mode');
+            }
+
+            darkModeToggle.addEventListener('click', function () {
+                body.classList.toggle('dark-mode');
+                const darkModeEnabled = body.classList.contains('dark-mode');
+                localStorage.setItem('darkMode', darkModeEnabled ? 'enabled' : 'disabled');
+            });
+
+            setTimeout(function() {
+                const downloadResume = confirm("Do you want to download my resume?");
+                if (downloadResume) {
+                    downloadResumeFile();
+                }
+            }, 1500); 
+
+            document.getElementById('downloadResumeBtn').addEventListener('click', function() {
+                downloadResumeFile();
+            });
+            function downloadResumeFile() {
+       
+                const resumeUrl = 'Suryansh Srivastava.pdf';
+                const a = document.createElement('a');
+                a.href = resumeUrl;
+                a.download = 'Suryansh_Srivatava_Resume.pdf';
+                a.click();
+            }
+        });
+    </script> 
 </body>
 </html>
