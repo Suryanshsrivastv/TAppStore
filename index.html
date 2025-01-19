@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <style> html { scroll-behavior: smooth; } nav { display: none;} </style>
     <title>Home Page</title>
 </head>
 <body>
@@ -17,11 +18,24 @@
             <button class="toggle-dark-mode" id="dark-mode-toggle">Dark Mode</button>
         </div>
     </div>
-    
+    <nav> 
+        <ul>
+             <li><a href="#Tangpt">Go to Tangpt</a>
+            </li> <li><a href="#QRor">Go to QRor</a>
+            </li> <li><a href="#MemeSup">Go to MemeSup</a>
+            </li> <li><a href="#TO Do">Go to TO Do</a></li>
+             <li><a href="#Lamezzz">Go to Lameezzz</a></li>
+              <li><a href="#Wconvert">Go to Wconvert</a></li>
+               <li><a href="#Fiterr">Go to Fiterr</a></li>
+                <li><a href="#Weathera">Go to Weathera</a></li>
+                 <li><a href="#TScanz">Go to TScanz</a></li>
+         </ul>
+    </nav>
     <div class="offerings">
          <h1><b>Our Offerings<hr></b></h1>
     </div>
-    
+ <div class="apps"> 
+    <div id="Tangpt">
     <div class="app-container">
         <div class="description">
             <h1>Tangpt<hr></h1>
@@ -42,7 +56,9 @@
                     <div class="download">
                         <h2>Download</h2> <div class="download-box"> <a href="Tangpt.apk" download>Click Here to Download APK</a> </div>
                     </div>
+    </div> 
     </div>  
+    <div id="QRor">
     <div class="app-container">
         <div class="description">
             <h1>QRor<hr></h1>
@@ -72,6 +88,9 @@
                         <h2>Download</h2> <div class="download-box"> <a href="Qror.apk" download>Click Here to Download APK</a> </div>
                     </div>
     </div>  
+    </div>
+
+    <div id="MemeSup">
     <div class="app-container">
         <div class="description">
             <h1>MemeSup<hr></h1>
@@ -97,7 +116,9 @@
                     <div class="download">
                         <h2>Download</h2> <div class="download-box"> <a href="MemesUp.apk" download>Click Here to Download APK</a> </div>
                     </div>
-    </div>      
+    </div>  
+    </div>
+    <div id="TO Do">    
     <div class="app-container">
         <div class="description">
             <h1>TO Do<hr></h1>
@@ -135,20 +156,22 @@
                     <div class="download">
                         <h2>Download</h2> <div class="download-box"> <a href="ToDo.apk" download>Click Here to Download APK</a> </div>
                     </div>
-    </div>        
+    </div>  
+    </div>
+    <div id="Lamezzz">      
     <div class="app-container">
         <div class="description">
-            <h1>Lameezzz<hr></h1>
+            <h1>Lamezz<hr></h1>
             <h2>About the App</h2>
             <p>
-                Introducing <strong>Lameezz</strong>—the social networking app where your lamest memes take center stage! 
-                Share your quirkiest creations, explore hilarious content, and connect with meme enthusiasts worldwide.
-              </p>
-              <p>
-                Have fun, spread laughter, and like the memes that make you chuckle. 
-                With <strong>Lameezz</strong>, it's all about celebrating humor in its purest, silliest form!
-              </p>
-              <h3>Share. Laugh. Repeat!</h3>
+                Introducing <strong>Lamezz</strong>—the social networking app where your lamest jokes take center stage! 
+                 Share your quirkiest creations, explore hilarious content, and connect with humor enthusiasts worldwide.
+               </p>
+               <p>
+                 Have fun, spread laughter, and like the jokes that make you chuckle. 
+                 With <strong>Lamezz</strong>, it's all about celebrating humor in its purest, silliest form!
+               </p>
+               <h3>Share. Laugh. Repeat!</h3>
         </div>
         <div class="screenshots"> 
             <h2>Screenshots</h2>
@@ -169,6 +192,8 @@
                         <h2>Download</h2> <div class="download-box"> <a href="Lamezz.apk" download>Click Here to Download APK</a> </div>
                     </div>
     </div>
+    </div>
+    <div id="Wconvert">
     <div class="app-container">
         <div class="description">
             <h1>Wconvert<hr></h1>
@@ -204,6 +229,8 @@
                         <h2>Download</h2> <div class="download-box"> <a href="Wconv.apk" download>Click Here to Download APK</a> </div>
                     </div>
     </div>
+    </div>
+    <div id="Fiterr">
     <div class="app-container">
         <div class="description">
             <h1>Fiterr<hr></h1>
@@ -239,6 +266,8 @@
                         <h2>Download</h2> <div class="download-box"> <a href="Fiter.apk" download>Click Here to Download APK</a> </div>
                     </div>
     </div>
+    </div>
+    <div id="Weathera">
     <div class="app-container">
         <div class="description">
             <h1>Weathera<hr></h1>
@@ -263,6 +292,8 @@
                         <h2>Download</h2> <div class="download-box"> <a href="Weathera.apk" download>Click Here to Download APK</a> </div>
                     </div>
     </div>
+    </div>
+    <div id="TScanz">
     <div class="app-container">
         <div class="description">
             <h1>TScanz<hr></h1>
@@ -290,22 +321,25 @@
                         <h2>Download</h2> <div class="download-box"> <a href="textrecog.apk" download>Click Here to Download APK</a> </div>
                     </div>
     </div>
+    </div>
 
-
+</div> 
 
     <!-- till here are all the app containers  -->
 
 
-
+    <!-- image modal code -->
     <div id="imgModal" class="modal">
         <span class="close" id="closeBtn">&times;</span>
         <img class="modal-content" id="img01">
         <div id="caption"></div>
     </div>
+    <!-- counter code -->
      <div class="counters">
         <p>Page Views: <span id="page-views">0</span></p>
         <h1>~Suryansh Srivastv</h1>
      </div>
+     
      <script> document.addEventListener('DOMContentLoaded', function() { 
          let pageViews = localStorage.getItem('pageViews') || 1000;
           pageViews++;
@@ -330,6 +364,7 @@
                 });
             });
         </script>
+
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const images = document.querySelectorAll('.open-img');
@@ -357,5 +392,19 @@
                 });
             });
         </script> 
+
+        <!-- page scroller code -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              const appId = window.location.hash.substring(1);
+              if (appId) {
+                const appSection = document.getElementById(appId);
+                if (appSection) {
+                  appSection.scrollIntoView();
+                }
+              }
+            });
+          </script>
+          
 </body>
 </html>
